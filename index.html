@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스터디 모집- 반크엉</title>
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header: Logo & Navigation -->
+    <header>
+        <div class="wrapper">
+            <a href="#" class="logo">Full-stack dev study</a>
+            <!--menu-->
+            <nav>
+                <!-- Menu items -->
+                <button class="btn-menu">Menu</button>
+                <ul class="main-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#curriculum">Curriculum</a></li>
+                    <li><a href="#mentors">Mentors</a></li>
+                    <li><a href="#apply">Apply</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <button class="btn-theme" aria-label="다크 보드 존환">🌙</button>
+
+    <!-- Main / Hero Section -->
+    <section id="main">
+        <div class="wrapper">
+            <h1>Full-Stack Dev Study</h1>
+            <p class="main-date">2026. 04. 01 ~ 2026. 06. 30</p>
+            <p>안녕하세요, 저는 반크엉입니다. 웹 개발에 관심이 많고, 지속적으로 학습하고 있습니다.</p>
+            <p class="clock">
+                <span class="clock-date">---year---month---day</span>
+                <span class="clock-time">--:--:--:</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="wrapper">
+            <h2>About</h2>
+            <p>
+                이 스터디는 웹 개발에 관심 있는 사람들을 위한 Full-Stack 개발 스터디입니다. 
+                프론트엔드와 백엔드 기술을 함께 학습하며, 실제 프로젝트를 통해 실력을 향상시키는 것을 목표로 합니다.
+            </p>
+            <img src="images/hero01.png" alt="스터디 이미지" width="600" height="400">
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum">
+        <div class="wrapper">
+            <h2>Curriculum</h2>
+            <table class="curriculum-table">
+                <tr>
+                    <td class="week">Week 1</td>
+                    <td class="content">HTML/CSS Basics</td>
+                </tr>
+                <tr>
+                    <td class="week">Week 2</td>
+                    <td class="content">JavaScript Fundamentals</td>
+                </tr>
+                <tr>
+                    <td class="week">Week 3</td>
+                    <td class="content">React Basics</td>
+                </tr>
+                <tr>
+                    <td class="week">Week 4</td>
+                    <td class="content">Node.js and Express</td>
+                </tr>
+                <tr>
+                    <td class="week">Week 5</td>
+                    <td class="content">Database Integration</td>
+                </tr>
+                <tr>
+                    <td class="week">Week 6</td>
+                    <td class="content">Frontend</td>
+                </tr>
+                <tr>
+                    <td class="week">Week 7</td>
+                    <td class="content">Vercel Deployment</td>
+                </tr>
+                <tr>
+                    <td class="week">Week 8</td>
+                    <td class="content">Final Project and Presentation</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Mentors Section -->
+    <section id="mentors">
+        <div class="wrapper">
+            <h2>Mentors</h2>
+            <div class="mentors-list">
+                <div class="mentors-text">
+                    <h3>이서연</h3>
+                    <p>프론트엔드 실무 경험이 풍부한 멘토로, UI/UX 설계와 사용자 친화적인 웹 개발을 함께 지도합니다.</p>
+                </div>
+                <img src="images/mentor01.jpg" alt="멘토 이미지" width="200" height="200">
+            </div>
+            <div class="mentors-list">
+                <div class="mentors-text">
+                    <h3>정우진</h3>
+                    <p>웹 개발 프로젝트 기획부터 배포까지 경험해본 전문가로, 코딩 실력 향상과 커리어 방향 설정을 돕습니다.</p>
+                </div>
+                <img src="images/mentor02.jpg" alt="멘토 이미지" width="200" height="200">
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Section -->
+    <section id="apply">
+        <div class="wrapper">
+            <h2>Apply</h2>
+            <form method="get" action="#" class="apply-form">
+                <label for="name">Name:</label>
+                <input type="text" class="apply-field" placeholder="Enter your name" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" class="apply-field" placeholder="Enter your email" id="email" name="email" required>
+
+                <label for="message">Why do you want to join?</label>
+                <textarea class="apply-field apply-textarea" maxlength="200" placeholder="why do you want to join?" id="message" name="message" rows="4" required></textarea>
+            <p class="char-count">0 / 200자</p>
+                <label>Hobby
+                    <input type="checkbox" name="hobby" value="reading"> Reading
+                    <input type="checkbox" name="hobby" value="traveling"> Traveling
+                    <input type="checkbox" name="hobby" value="coding"> Coding
+                </label>
+
+                <input type="submit" class="apply-btn" value="Submit">
+            </form>
+
+            <div class="footer">
+                <p>
+                    <a href="mailto:apply@example.com">Help</a>
+                    <small>&copy; 2023 Your Company. All rights reserved.</small>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
